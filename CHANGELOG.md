@@ -7,6 +7,7 @@ FEATURES:
 * **New Resource**: `r/tfe_workspace_run` manages create and destroy lifecycles in a workspace, by @uk1288 ([#786](https://github.com/hashicorp/terraform-provider-tfe/pull/786))
 
 ENHANCEMENTS:
+* `r/tfe_agent_pool` and `d/tfe_agent_pool`: Add attribute `organization_scoped` and `allowed_workspace_ids` to allow scoping agent pools to workspaces by @hs26gill [870](https://github.com/hashicorp/terraform-provider-tfe/pull/870)
 
 BUG FIXES:
 
