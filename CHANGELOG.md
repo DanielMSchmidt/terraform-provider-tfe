@@ -5,9 +5,11 @@ BREAKING CHANGES:
 FEATURES:
 * `r/tfe_team`: Add attribute `manage_membership` to `organization_access` on `tfe_team` by @JarrettSpiker ([#801](https://github.com/hashicorp/terraform-provider-tfe/pull/801))
 * **New Resource**: `r/tfe_workspace_run` manages create and destroy lifecycles in a workspace, by @uk1288 ([#786](https://github.com/hashicorp/terraform-provider-tfe/pull/786))
+* **New Resource**: `r/tfe_agent_pool_allowed_workspaces` restricts the use of an agent pool to particular workspaces, by @hs26gill [870](https://github.com/hashicorp/terraform-provider-tfe/pull/870)
 
 ENHANCEMENTS:
-* `r/tfe_agent_pool` and `d/tfe_agent_pool`: Add attribute `organization_scoped` and `allowed_workspace_ids` to allow scoping agent pools to workspaces by @hs26gill [870](https://github.com/hashicorp/terraform-provider-tfe/pull/870)
+* `r/tfe_agent_pool`: Add attribute `organization_scoped` to set the scope of an agent pool by @hs26gill [870](https://github.com/hashicorp/terraform-provider-tfe/pull/870)
+* `d/tfe_agent_pool`: Add attribute `organization_scoped` and `allowed_workspace_ids` to retrieve agent pool scope and associated allowed workspace ids by @hs26gill [870](https://github.com/hashicorp/terraform-provider-tfe/pull/870)
 
 BUG FIXES:
 
